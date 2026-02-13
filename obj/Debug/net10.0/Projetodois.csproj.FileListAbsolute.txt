@@ -1,0 +1,15 @@
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.AssemblyInfoInputs.cache
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.AssemblyInfo.cs
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.csproj.CoreCompileInputs.cache
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.sourcelink.json
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\bin\Debug\net10.0\Projetodois.exe
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\bin\Debug\net10.0\Projetodois.deps.json
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\bin\Debug\net10.0\Projetodois.runtimeconfig.json
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\bin\Debug\net10.0\Projetodois.dll
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\bin\Debug\net10.0\Projetodois.pdb
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.dll
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\refint\Projetodois.dll
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.pdb
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\Projetodois.genruntimeconfig.cache
+C:\Users\alenc\OneDrive\Documentos\MeusProjects\Projetodois\Projetodois\obj\Debug\net10.0\ref\Projetodois.dll

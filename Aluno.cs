@@ -16,11 +16,11 @@ namespace Projetodois
             notas = new List<float>();
         }
 
-        public float CalcularMedia()
+        /*public float CalcularMedia()
         {
 
         }
-
+        */
         public bool AdicionarNota(float nota)
         {
             if (this.ValidarNota(nota))

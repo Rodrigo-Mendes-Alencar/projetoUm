@@ -16,30 +16,18 @@ namespace Projetodois
             Console.WriteLine("Digite a primeira nota: ");
             this.VerificarNota(float.Parse(Console.ReadLine()),aluno1);
             Console.WriteLine("Digite a segunda nota: ");
-            
+            this.VerificarNota(float.Parse(Console.ReadLine()), aluno1);
             Console.WriteLine("Digite a terceira nota");
-            
+            this.VerificarNota(float.Parse(Console.ReadLine()), aluno1);
 
         }
         private void VerificarNota(float nota,Aluno aluno)
         {
-        
-            if (aluno.AdicionarNota(nota))
+            while(!aluno.AdicionarNota(nota))
             {
-                return;
-            }
-            else
-            {
-                do
-                {
-                    Console.WriteLine("Nota inválida,digite uma nota entre 0 e 10: ");
-                    nota = float.Parse(Console.ReadLine());
-
-                } while (!aluno.AdicionarNota(nota));
-                return;
+                Console.WriteLine("Nota inválida, digite nota entre 0 e 10: ");
+                nota = float.Parse(Console.ReadLine());
             }
         }
-
-
     }
 }
