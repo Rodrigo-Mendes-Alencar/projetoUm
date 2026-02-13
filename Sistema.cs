@@ -35,7 +35,7 @@ namespace Projetodois
                     Console.WriteLine("Nota inválida,digite uma nota entre 0 e 10: ");
                     nota = float.Parse(Console.ReadLine());
 
-                } while (aluno.AdicionarNota(nota));
+                } while (!aluno.AdicionarNota(nota));
                 return;
             }
         }
