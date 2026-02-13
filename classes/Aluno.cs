@@ -6,7 +6,7 @@ namespace ProjetoUm.classes
 {
     internal class Aluno
     {
-        String Nome { get; }
+        public String Nome { get; }
         private List<float> notas { get; }
 
 
