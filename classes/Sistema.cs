@@ -7,52 +7,65 @@ namespace ProjetoUm.classes
 {
     internal class Sistema
     {
+
+        private List<Aluno> alunos { get; }
         enum opcaoMenu{ CadastrarAluno = 1, InserirNotas, ListarAlunos, VerBoletim, Sair }
-        public void ExibirMenu()
+
+        public Sistema()
         {
-
-            Console.WriteLine("Bem vindo ao sistema de notas, escolha uma opção: ");
-            Console.WriteLine("|1| Cadastrar aluno");
-            Console.WriteLine("|2| Inserir notas em Aluno");
-            Console.WriteLine("|3| Listar Alunos");
-            Console.WriteLine("|4| Ver boletim de um Aluno");
-            Console.WriteLine("|5| Sair");
-            Console.WriteLine("Bem vindo ao sistema de notas, escolha uma opção: ");
-            int opcao = int.Parse(Console.ReadLine());
-
+            alunos = new List<Aluno>();
         }
-        public void ExecutarMenu(int opcao)
+
+        public void inicar()
         {
-            opcaoMenu opcaoSelecionada = (opcaoMenu)opcao;
-            switch (opcao)
+            int opcao = 0;
+            do
             {
-                case opcaoMenu.CadastrarAluno:
+                Console.WriteLine("\nBem vindo ao sistema de notas, escolha uma opção: ");
+                Console.WriteLine("|1| Cadastrar aluno");
+                Console.WriteLine("|2| Inserir notas em Aluno");
+                Console.WriteLine("|3| Listar Alunos");
+                Console.WriteLine("|4| Ver boletim de um Aluno");
+                Console.WriteLine("|5| Sair");
+                Console.Write("Bem vindo ao sistema de notas, escolha uma opção: ");
+                opcao = int.Parse(Console.ReadLine());
+                opcaoMenu opcaoSelecionada = (opcaoMenu)opcao;
 
-                break;
-            }
+                switch (opcaoSelecionada)
+                {
+                    case opcaoMenu.CadastrarAluno:
+                        CadastrarAluno();
+                        break;
+                    case opcaoMenu.InserirNotas:
+                        ListarAlunos();
+                        Console.WriteLine("Digite o numero do aluno para inserir as notas: ");
+                        Console.ReadLine();
+                        break;
+                }
+
+            } while (opcao != 5);
+    
         }
-
-
+ 
         public void CadastrarAluno()
         {
             Console.WriteLine("Digite o nome do aluno: ");
-            Aluno aluno1 = new Aluno(Console.ReadLine());
+            Aluno novoAluno = new Aluno(Console.ReadLine());
+                alunos.Add(novoAluno);
+            Console.WriteLine("\nAluno cadastrado com sucesso!");
         }
 
-        public void ListarAlunos(Aluno aluno)
+        public void ListarAlunos()
         {
-            Console.WriteLine("Lista de alunos: ");
-            Console.WriteLine($"Aluno 1:{aluno.Nome}");
+            for (int i = 0; i< alunos.Count; i++)
+            {
+                Console.WriteLine($"Aluno {i + 1} {alunos[i].Nome}");
+            }
         }
 
         public void Recebernotas(Aluno aluno)
         {
-            Console.WriteLine("Digite a primeira nota: ");
-            this.VerificarNota(float.Parse(Console.ReadLine()),aluno1);
-            Console.WriteLine("Digite a segunda nota: ");
-            this.VerificarNota(float.Parse(Console.ReadLine()), aluno1);
-            Console.WriteLine("Digite a terceira nota");
-            this.VerificarNota(float.Parse(Console.ReadLine()), aluno1);
+            
 
         }
         private void VerificarNota(float nota,Aluno aluno)
@@ -65,3 +78,14 @@ namespace ProjetoUm.classes
         }
     }
 }
+
+
+
+/*
+ * 
+ *          Console.WriteLine("Digite a primeira nota: ");
+            this.VerificarNota(float.Parse(Console.ReadLine()),aluno);
+            Console.WriteLine("Digite a segunda nota: ");
+            this.VerificarNota(float.Parse(Console.ReadLine()), aluno);
+            Console.WriteLine("Digite a terceira nota");
+            this.VerificarNota(float.Parse(Console.ReadLine()), aluno);         */
