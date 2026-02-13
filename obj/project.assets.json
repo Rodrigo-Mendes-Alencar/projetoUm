@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alenc\\OneDrive\\Documentos\\MeusProjects\\Projetodois\\Projetodois\\Projetodois.csproj",
-      "projectName": "Projetodois",
-      "projectPath": "C:\\Users\\alenc\\OneDrive\\Documentos\\MeusProjects\\Projetodois\\Projetodois\\Projetodois.csproj",
+      "projectUniqueName": "C:\\Users\\alenc\\OneDrive\\Documentos\\MeusProjects\\Projetodois\\Projetodois\\ProjetoUm.csproj",
+      "projectName": "ProjetoUm",
+      "projectPath": "C:\\Users\\alenc\\OneDrive\\Documentos\\MeusProjects\\Projetodois\\Projetodois\\ProjetoUm.csproj",
       "packagesPath": "C:\\Users\\alenc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\alenc\\OneDrive\\Documentos\\MeusProjects\\Projetodois\\Projetodois\\obj\\",
       "projectStyle": "PackageReference",

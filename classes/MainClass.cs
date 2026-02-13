@@ -1,4 +1,4 @@
-﻿namespace Projetodois
+﻿namespace ProjetoUm.classes
 {
     internal class MainClass
     {
