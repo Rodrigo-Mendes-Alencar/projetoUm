@@ -8,19 +8,32 @@ namespace ProjetoUm.classes
     {
         public String Nome { get; }
         private List<float> notas { get; }
+        public int id{get;}
 
-
-        public Aluno(string nome)
+        public Aluno(string nome, int id)
         {
-            Nome = nome;
+            this.Nome = nome;
+            this.id = id;
             notas = new List<float>();
         }
 
-        /*public float CalcularMedia()
+        public List<float> EnviarNotas()
         {
-
+            return notas;
         }
-        */
+
+        public float CalcularMedia()
+        {
+            float media = 0;
+            for (int i =0; i < notas.Count; i++)
+            {
+                media = (notas[i] + media);
+            }
+            media = media / notas.Count;
+            
+            return media;
+        }
+      
         public bool AdicionarNota(float nota)
         {
             if (this.ValidarNota(nota))
