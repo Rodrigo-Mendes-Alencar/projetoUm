@@ -32,7 +32,7 @@ namespace ProjetoUm.classes
                 opcao = int.Parse(Console.ReadLine());
                 while(opcao > 5 || opcao < 0)
                 {
-                    Console.WriteLine("Digite uma opção valida do menu: ");
+                    Console.Write("Digite uma opção valida do menu: ");
                     opcao = int.Parse(Console.ReadLine());
                 }
                 opcaoMenu opcaoSelecionada = (opcaoMenu)opcao;
@@ -101,19 +101,21 @@ namespace ProjetoUm.classes
 
         public void ListarAlunos()
         {
+            Console.WriteLine("\n");
             for (int i = 0; i< alunos.Count; i++)
             {
                 Console.WriteLine($"Aluno {i + 1} : {alunos[i].Nome}");
             }
+            Console.WriteLine("\n");
         }
 
         public void Recebernotas(Aluno aluno)
         {
-            Console.WriteLine("Digite a primeira nota: ");
+            Console.Write("Digite a primeira nota: ");
             this.VerificarNota(float.Parse(Console.ReadLine()), aluno);
-            Console.WriteLine("Digite a segunda nota: ");
+            Console.Write("Digite a segunda nota: ");
             this.VerificarNota(float.Parse(Console.ReadLine()), aluno);
-            Console.WriteLine("Digite a terceira nota");
+            Console.Write("Digite a terceira nota");
             this.VerificarNota(float.Parse(Console.ReadLine()), aluno);
 
         }
@@ -121,7 +123,7 @@ namespace ProjetoUm.classes
         {
             while(!aluno.AdicionarNota(nota))
             {
-                Console.WriteLine("Nota inválida, digite nota entre 0 e 10: ");
+                Console.Write("Nota inválida, digite nota entre 0 e 10: ");
                 nota = float.Parse(Console.ReadLine());
             }
         }
@@ -137,6 +139,18 @@ namespace ProjetoUm.classes
             float media = 0;
             media = aluno.CalcularMedia();
             Console.WriteLine($"\nA media do aluno {aluno.Nome} é {media}");
+            if (media > 6)
+            {
+                Console.WriteLine(" Aluno aprovado!");
+            }
+            else if (media > 4.5)
+            {
+                Console.WriteLine("Aluno em recuperação");
+            }
+            else
+                Console.WriteLine("Aluno reprovado!");
+
         }
+     
     }
 }

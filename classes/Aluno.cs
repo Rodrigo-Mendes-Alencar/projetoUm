@@ -24,6 +24,11 @@ namespace ProjetoUm.classes
 
         public float CalcularMedia()
         {
+            if (notas.Count == 0) 
+            {
+                return 0;
+            }
+
             float media = 0;
             for (int i =0; i < notas.Count; i++)
             {
